@@ -6,7 +6,6 @@ const siswaSchema = Schema(
     _id: Schema.Types.ObjectId,
     Name: String,
     Nilai: Number,
-    kelas: { type: Schema.Types.ObjectId, ref: "kelas" },
     Rank: String,
   },
   { timestamps: true }

@@ -4,7 +4,7 @@
   "description": "ranked siswa bedasarkan nilai sederhana",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
   },
   "author": "M Kusen A",
   "license": "ISC",
