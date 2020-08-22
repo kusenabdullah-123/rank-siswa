@@ -4,7 +4,8 @@
   "description": "ranked siswa bedasarkan nilai sederhana",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "author": "M Kusen A",
   "license": "ISC",
