@@ -3,13 +3,16 @@ const app = express();
 const mongoose = require("mongoose");
 const Siswa = require("./model/siswa");
 const Rank = require("./model/ranking");
-
+const mongoDbAtlas =
+  "mongodb+srv://dbKusen:kusenDB@cluster0.vkzjd.mongodb.net/<dbname>?retryWrites=true&w=majority";
+const mongoDbLocal =
+  "mongodb://root:root@127.0.0.1:27017/sekolah?authSource=admin";
 mongoose
-  .connect("mongodb://root:root@127.0.0.1:27017/sekolah?authSource=admin", {
+  .connect(mongoDbAtlas, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then((result) => {
+  .then(() => {
     console.log("connected database");
   })
   .catch((err) => {
